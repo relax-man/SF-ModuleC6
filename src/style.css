@@ -1,0 +1,66 @@
+.container {
+    display: grid;
+    grid-template-rows: minmax(80px, 1fr) minmax(300px, 5fr) 1fr;
+    grid-gap: 1em;
+    max-width: 500px;
+    height: 100vh;
+}
+
+.title, .messages-section {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.title {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.messages-section {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+}
+
+.message {
+  max-width: 13em;
+  background-color: #3c444b;
+  margin: 0.4em;
+  padding: 0.5em 0.8em 0.6em;
+  border-width: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  overflow-wrap: break-word;
+}
+
+.form-control, .btn {
+  font-size: 17px !important;
+  border-radius: 4px !important;
+}
+
+.btn {
+  height: calc(1.5em + 0.75rem - 2px);
+  padding: 0 0.6em !important;
+}
+
+.btn-send {
+  margin: 0px 0.4em;
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.1rem rgba(130, 138, 145, 0.25);
+}
+.btn-secondary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.15rem rgba(130, 138, 145, 0.25);
+}
+
+.btn-dark:focus {
+  box-shadow: 0 0 0 0.1rem rgba(82, 88, 93, 0.25);
+}
+.btn-dark:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.15rem rgba(82, 88, 93, 0.25);
+}
+
+.form-control:focus {
+  border-color: rgba(130, 138, 145, 0.6);
+  box-shadow: 0 0 0 0.1rem rgba(130, 138, 145, 0.25);
+}
